@@ -15,6 +15,12 @@ class Ejercicio4Test {
 		assertEquals("c", Ejercicio4.ipAdressType("200.30.110.5", ""));
 		assertEquals("c", Ejercicio4.ipAdressType("200.30.110.5", "255.255.255.0"));
 		assertTrue(Ejercicio4.ipAdressType("200.30.110.5/24", "") == "c");
+		assertThrows(RuntimeException.class, () -> {
+		      Ejercicio4.ipAdressType(null, null);
+		    });
+		assertThrows(RuntimeException.class, () -> {
+			Ejercicio4.ipAdressType("192.168.1.1", "255.255.196.0");
+		});
 	}
 	
 	@Test
