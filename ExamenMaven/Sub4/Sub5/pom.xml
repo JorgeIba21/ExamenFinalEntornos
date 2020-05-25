@@ -4,22 +4,17 @@
                              http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 	<groupId>es.salesianos.edu</groupId>
-	<artifactId>A</artifactId>
-	<version>3</version>
-	<name>A</name>
-	<packaging>jar</packaging>
+	<artifactId>Sub5</artifactId>
+	<version>1.0</version>
+	<name>Sub5</name>
+	<packaging>pom</packaging>
 	
 	  <parent>
 		<groupId>es.salesianos.edu</groupId>
-		<artifactId>root</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<artifactId>Sub4</artifactId>
+		<version>1.0</version>
 	  </parent>
-	  
-	  <dependencies>
-	  	<dependency>
-	  		<groupId>es.salesianos.edu</groupId>
-			<artifactId>E</artifactId>
-			<version>1.0</version>
-	  	</dependency>
-	  </dependencies>
+	  <modules>
+		  <module>E</module>
+	  </modules>
 </project>

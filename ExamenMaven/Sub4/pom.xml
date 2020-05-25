@@ -4,14 +4,18 @@
                              http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 	<groupId>es.salesianos.edu</groupId>
-	<artifactId>Sub1</artifactId>
+	<artifactId>Sub4</artifactId>
 	<version>1.0</version>
-	<name>Sub1</name>
-	<packaging>jar</packaging>
+	<name>Sub4</name>
+	<packaging>pom</packaging>
 	
 	  <parent>
 		<groupId>es.salesianos.edu</groupId>
 		<artifactId>root</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	  </parent>
+	  <modules>
+		  <module>Sub5</module>
+		  <module>F</module>
+	  </modules>
 </project>
